@@ -11,7 +11,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const dateTimePicker = document.querySelector('#datetime-picker');
 const startButton = document.querySelector('#start-button');
-const timerDisplay = document.querySelector('.timer');
 startButton.disabled = true;
 let userSelectedDate;
 const dataDays = document.querySelector('[data-days]');
@@ -64,7 +63,7 @@ const options = {
         titleColor: '#fff',
         close: true,
         closeColor: '#fff',
-        iconUrl: iconDagger,
+        iconUrl: "./img/icon/bi_x-octagon.png"
       });
       startButton.disabled = true;
       return;
